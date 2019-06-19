@@ -4,9 +4,11 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 // ---to be able to use a database created in MongoDB shell ----------------------
-// new parser instead of deprecated one
+// new parser and different settings to het rid of deprecation problem
 mongoose.connect("mongodb://localhost/nodeappdatabase", {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useCreateIndex: true
 });
 
 // --- CRUD: C: Create users ------------------------------------------------------
@@ -58,11 +60,11 @@ kenny.manify(function(err, name) {
   console.log("Twoje nowe imię to: " + name);
 });
 
-kenny.save(function(err) {
-  if (err) throw err;
+// kenny.save(function(err) {
+//   if (err) throw err;
 
-  console.log("Uzytkownik " + kenny.name + " zapisany pomyslnie");
-});
+//   console.log("Uzytkownik " + kenny.name + " zapisany pomyslnie");
+// });
 
 const benny = new User({
   name: "Benny",
@@ -75,11 +77,11 @@ benny.manify(function(err, name) {
   console.log("Twoje nowe imię to: " + name);
 });
 
-benny.save(function(err) {
-  if (err) throw err;
+// benny.save(function(err) {
+//   if (err) throw err;
 
-  console.log("Uzytkownik " + benny.name + " zapisany pomyslnie");
-});
+//   console.log("Uzytkownik " + benny.name + " zapisany pomyslnie");
+// });
 
 const mark = new User({
   name: "Mark",
@@ -92,11 +94,11 @@ mark.manify(function(err, name) {
   console.log("Twoje nowe imię to: " + name);
 });
 
-mark.save(function(err) {
-  if (err) throw err;
+// mark.save(function(err) {
+//   if (err) throw err;
 
-  console.log("Uzytkownik " + mark.name + " zapisany pomyslnie");
-});
+//   console.log("Uzytkownik " + mark.name + " zapisany pomyslnie");
+// });
 
 // --- CRUD: R: find users ---------------------------------------------------
 // --- find all users

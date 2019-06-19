@@ -5,11 +5,14 @@ mongoose.Promise = global.Promise;
 
 // ---to be able to use a database created in MongoDB shell ----------------------
 // new parser and different settings to het rid of deprecation problem
-mongoose.connect("mongodb://localhost/nodeappdatabase", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useCreateIndex: true
-});
+mongoose.connect(
+  "mongodb+srv://artiZachara:<LittleAncient1ne!>@cluster0-ei5ms.mongodb.net/test?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+  }
+);
 
 // --- CRUD: C: Create users ------------------------------------------------------
 // --- Schema to map to MongoDB collection ----------------------------------------

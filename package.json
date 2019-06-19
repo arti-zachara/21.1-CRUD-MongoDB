@@ -1,0 +1,24 @@
+{
+  "name": "21.1-crud-mongodb",
+  "version": "1.0.0",
+  "description": "Kodilla taks 21.5-7: CRUD in MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arti-zachara/21.1-CRUD-MongoDB.git"
+  },
+  "keywords": [
+    "CRUD",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "arti Zachara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arti-zachara/21.1-CRUD-MongoDB/issues"
+  },
+  "homepage": "https://github.com/arti-zachara/21.1-CRUD-MongoDB#readme"
+}

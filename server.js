@@ -13,8 +13,9 @@ mongoose.Promise = global.Promise;
 // ---to be able to use a database created in MongoDB shell ----------------------
 // new parser and different settings to het rid of deprecation problem
 mongoose.connect(
-  "mongodb+srv://artiZachara:Kod%21llaUserFr33@cluster0-ei5ms.mongodb.net/test?retryWrites=true&w=majority",
+  "mongodb+srv://kodillaUserDB:2ZwOXaux65nmawTG@cluster0-ei5ms.mongodb.net/test?retryWrites=true&w=majority",
   {
+    // useMongoClient: true,
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true

@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/arti-zachara/21.1-CRUD-MongoDB#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mongoose": "^5.6.0"
   }
 }
